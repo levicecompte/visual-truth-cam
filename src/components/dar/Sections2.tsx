@@ -122,7 +122,7 @@ export function Suites() {
           {t.suites.items.map((s, i) => (
             <Reveal key={s.name} delay={0.05 * i}>
               <SuiteCard
-                image={suiteImages[i % suiteImages.length]}
+                image={suiteImages[i % suiteImages.length]!}
                 name={s.name}
                 view={s.view}
                 price={s.price}
@@ -209,7 +209,7 @@ export function Ateliers() {
           >
             <div className="grain relative aspect-[4/5] overflow-hidden">
               <img
-                src={images[i]}
+                src={images[i % images.length]!}
                 alt={a.t}
                 loading="lazy"
                 width={1008}
