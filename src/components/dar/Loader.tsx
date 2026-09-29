@@ -17,37 +17,23 @@ export function Loader() {
           exit={{ opacity: 0, filter: "blur(8px)" }}
           transition={{ duration: 0.9, ease: [0.65, 0, 0.35, 1] }}
         >
-          <svg
-            viewBox="0 0 600 120"
-            className="w-[min(78vw,520px)]"
-            fill="none"
-            aria-label="DAR ELIA"
-          >
-            <motion.text
-              x="300"
-              y="82"
-              textAnchor="middle"
-              fontFamily="'Cormorant Garamond', Georgia, serif"
-              fontSize="78"
-              fontWeight="300"
-              letterSpacing="18"
-              fill="none"
-              stroke="url(#copper)"
-              strokeWidth="0.9"
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ pathLength: 1, opacity: 1 }}
-              transition={{ duration: 2.1, ease: "easeInOut" }}
+          <div className="relative overflow-hidden px-2">
+            <motion.h1
+              className="text-copper font-serif text-[clamp(2.2rem,8vw,4.6rem)] font-light tracking-[0.42em]"
+              initial={{ y: "115%" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
             >
               DAR ELIA
-            </motion.text>
-            <defs>
-              <linearGradient id="copper" x1="0" y1="0" x2="600" y2="0">
-                <stop stopColor="#8E5A3E" />
-                <stop offset="0.5" stopColor="#D79A74" />
-                <stop offset="1" stopColor="#8E5A3E" />
-              </linearGradient>
-            </defs>
-          </svg>
+            </motion.h1>
+          </div>
+          <motion.div
+            className="mt-6 h-px origin-left bg-cuivre"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 1.9, delay: 0.3, ease: [0.65, 0, 0.35, 1] }}
+            style={{ width: "min(70vw, 460px)" }}
+          />
           <motion.p
             className="eyebrow mt-8"
             initial={{ opacity: 0 }}
