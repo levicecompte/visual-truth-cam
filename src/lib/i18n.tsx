@@ -204,7 +204,7 @@ export const fr = {
     ],
     rights: "Tous droits réservés",
   },
-} as const;
+};
 
 export const en: Dict = {
   nav: {
