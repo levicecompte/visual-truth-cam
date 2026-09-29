@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Sections de la page d'accueil dans `src/components/dar/`, contenu FR/EN centralisé dans `src/lib/i18n.tsx` — une seule source de vérité pour les textes bilingues.
+- Animations avec `motion/react` et défilement fluide via Lenis (`SmoothScroll`), chargé uniquement côté client pour rester compatible SSR.
